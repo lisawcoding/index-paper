@@ -1,0 +1,394 @@
+:root{
+    --pink:#D75B66;
+    --blue:#23345C;
+    --yellow:#F1BA48;
+    --brown:#BD8A44;
+    --grey:#BFAFA0;
+}
+/*font-family: 'Lobster', cursive;*/
+/*font-family: 'Encode Sans Condensed', sans-serif;*/
+.hoverHeader{
+    margin-left:-2px;
+    margin-top:-2px;
+}
+/******************************************************************************/
+*{
+    margin:0;
+    padding:0;
+}
+/*body{*/
+/*    font-family: 'Encode Sans Condensed', sans-serif;*/
+/*    background-image:url("http://absfreepic.com/absolutely_free_photos/small_photos/growing-wild-mushrooms-in-forest-4752x3168_69153.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size:cover;*/
+/*    background-position: center;*/
+/*    width:100%;*/
+/*    height:auto;*/
+/*    min-height: 100%;*/
+/*}*/
+
+.container-c{
+    width:100%;
+    height:100vh;
+    position: relative;
+    margin:0 auto;
+}
+header{
+    display:flex;
+}
+header div{
+    width:200px;
+    height:50px;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    font-size:1.7rem;
+    line-height:50px;
+    font-family: 'Lobster', cursive;
+}
+main > div{
+    position:absolute;
+    height:200px;
+    overflow: hidden;
+    width:100%;
+}
+/*page1********************************************************************/
+.index0, .main0 {
+    background:var(--brown);
+    z-index:1;
+    box-shadow:#986f36 5px 0px; 
+    height:auto;
+}
+article{
+    padding: 70px 120px;
+}
+article h2{
+    font-size: 2.5rem;
+}
+article h3{
+    font-size: 2rem;
+}
+article p, i, li{
+    font-size: 1.7rem;
+}
+.me{
+    float:left;
+    width:37%;
+    height:auto;
+    margin:120px 70px 50px 120px;
+}
+/*page2********************************************************************/
+.index1, .main1{
+    background:var(--blue);
+    box-shadow: #151f37 5px 0px;
+    color:#BFAFA0;
+}
+/*page3********************************************************************/
+.index2, .main2{
+    background:var(--pink);
+    box-shadow: #cd3240 5px 0px;
+    color:#ebadb2;
+}
+.main2{
+    width:100%;
+    padding:25px auto;
+    /*all child div same height*/
+    display: flex;
+    padding:25px 0;
+}
+.info{
+    width:15%;
+    margin:0 2%;
+}
+.computer{
+    width:79%;
+}
+.monitor {
+  background-color:#fff;
+  border:50px solid #f8f7f5;
+  border-radius: 25px;
+  position:relative;
+  box-shadow: 5px 6px grey;
+}
+.iframe-wrapper {
+  position:relative;
+  padding-top: 50%;
+  overflow: hidden;
+  border:1px solid #313131;
+}
+.iframe-wrapper iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.keyboard{
+    margin-top:20px;
+      border-bottom: 150px solid #f8f3f5;
+      border-left: 22px solid transparent;
+      border-right: 50px solid transparent;
+      border-radius:120px 120px 55px 55px;
+      box-shadow: 5px 6px grey;
+}
+.fa-apple{
+    color:#adacab;
+    font-size:2rem;
+    position: absolute;
+    left: calc(50%);
+    transform: translateX(-50%);
+}
+button, .details{
+    width:100%;
+    padding:30px 25px;
+    background:#c1515b;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    box-shadow: 0 6px #6b2d33;
+    border:none;
+    position: relative;
+    margin:12px auto;
+}
+.details{
+    width:auto;
+    font-size: 1.2rem;
+    height: auto;
+}
+button a{
+    color:#ebadb2;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+button:hover{
+    box-shadow: 0 4px #6b2d33;
+    top:2px;
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: 0 0 #6b2d33;
+    top:6px;
+}
+
+/*main3**********************************************************************************************/
+.index3, .main3{
+    background:var(--grey);
+    box-shadow: #988c80 5px 0px;
+    color:#dfd7cf;
+
+}
+.main3{
+    width:100%;
+    padding:25px auto;
+    display: flex;
+    padding:25px 0;
+}
+.main3 button, .main3 .details{
+    background:#988c80;
+    box-shadow: 0 6px #726960;
+}
+.main3 button a, .main3 .details{
+    color:#dfd7cf;
+}
+.main3 button:hover{
+    box-shadow: 0 4px #726960;
+}
+.main3:active{
+    box-shadow: 0 0 #726960;
+}
+/*main4********************************************************************************************************/
+.index4, .main4{
+    background:var(--yellow);
+    box-shadow: #988c80 5px 0px;
+    color:#f9e3b5;
+}
+.main4{
+    width:100%;
+    padding:25px auto;
+    display: flex;
+    padding:25px 0;
+}
+.main4 button, .main4 .details{
+    background:#d8a740;
+    box-shadow: 0 6px #a88232;
+}
+.main4 button a, .main4 .details{
+    color:#f9e3b5;
+}
+.main4 button:hover{
+    box-shadow: 0 4px #a88232;
+}
+.main4:active{
+    box-shadow: 0 0 #a88232;
+}
+/*media responsive*********************************************************************************/
+@media only screen and (max-width: 1270px){
+    .me{
+        margin: 120px 50px 50px 120px;
+    }
+    article p, li, h3{
+        font-size: 1.5rem;
+    }
+    .keyboard{
+        display: none;
+    }
+    .computer{
+        width:62%;
+        margin:auto;
+    }
+    .monitor{
+        border-left:25px solid #f8f7f5;
+        border-right:25px solid #f8f7f5;
+    }
+    .iframe-wrapper{
+        padding-top:120%;
+    }
+    .info{
+        width:25%;
+        margin:auto 0 auto auto;
+    }
+    button, .details{
+        padding:5px;
+    }
+}
+@media only screen and (max-width:1000px){
+    article{
+        padding:70px;   
+    }
+    .me{
+        margin: 70px 25px 25px 70px;
+    }
+    header div{
+        font-size:1rem;
+    }
+    .computer{
+        width:37%;
+    }
+    .monitor{
+        border-left:7px solid #f8f7f5;
+        border-right:7px solid #f8f7f5;        
+    }
+    .iframe-wrapper{
+        padding-top:160%;
+    }
+    .info{
+        width:37%;
+    }
+}
+@media only screen and (max-width: 762px){
+    article{
+        padding:50px;
+    }
+    article ul{
+        padding-left: 25px;
+    }
+    article h3{
+        font-size: 1.5rem;
+    }
+    .me{
+        margin:50px 20px 20px 50px;
+    }
+    .computer{
+         width:360px;
+         height: 640px
+    }
+}
+@media only screen and (max-width:472px){
+    .me{
+        margin: 20px;
+        min-width:172px;
+    }
+    article{
+        padding:20px;   
+    }
+    article p, article li{
+        font-size: 1.2rem;
+    }
+    /*css grid*/
+    /*.main2, .main3, .main4{*/
+    /*    display: grid;*/
+    /*    grid-template-areas:"computer"*/
+    /*                        "info";*/
+    /*}*/
+    /*.info{*/
+    /*    grid-area:info;*/
+    /*    width:72%;*/
+    /*    margin:auto;*/
+    /*}*/
+    /*.computer{*/
+    /*    grid-area:computer;*/
+    /*    width:72%;*/
+    /*    min-width:200px;*/
+    /*    height:auto;*/
+    /*}*/
+    .main2, .main3, .main4{
+            display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    }
+    .info{
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+    width:90%;
+    margin:0 auto;
+    }
+    .computer{
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+        width:90%;
+        height:auto;
+    }
+}
+
+
+#english, #chinese{
+    background:#bd6c44;
+    position: fixed;
+    z-index: 99;
+    opacity: 0.2;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 20px;
+    right:0;
+    border:#f3e5de 2px solid;
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer
+}
+#chinese{
+    right:70px;
+}
+#english{
+    font-size: 2.5rem
+}
+#english:hover, #chinese:hover{
+    opacity: 0.7;
+}
+.c{
+    display: none;
+    font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
+}
